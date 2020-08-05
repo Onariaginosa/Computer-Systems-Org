@@ -1,0 +1,40 @@
+				
+Assume single-precision IEEE 754.				
+				
+Hexadecimal	Binary Scientific Notation	Decimal		
+?	1.101 x 2^(-20)	-		
+F1 28 00 00	?	-		
+				
+Assume double-precision IEEE 754.				
+				
+Hexadecimal	Binary Scientific Notation	Decimal		
+B3 0F 00 00 00 00 00 00	?	-		
+				
+Assume Unicode.				
+				
+Glyph	Codepoint	UTF-32	UTF-16	UTF-8
+∞	U+221E	?	-	?
+🀲	?	-	D83C DC32	?
+M	?	?	004D	-
+?	?	0001F624	-	F0 9F 98 A4
+⋡	-	?	?	E2 8B A1
+?	-	00000066	?	66
+🀦	?	0001F026	-	?
+ϟ	?	?	-	CF 9F
+ú	-	000000FA	?	?
+?	-	?	D83D DE4B	F0 9F 99 8B
+				
+Assume our simple machine, given the following labels:				
+counter	    C43			
+message	1000153			
+lookup	 20DB3D			
+stdin	    1FD			
+stdout	    884			
+gpu	F00BF6D			
+				
+Machine Instruction	Assembly Instruction			
+40000C43	?			
+?	STORE message			
+?	JLZ counter			
+?	OUT gpu			
+20000884	?			
